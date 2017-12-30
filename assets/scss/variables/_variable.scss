@@ -1,0 +1,35 @@
+$primary-bg-color: #E91E63;
+$primary-bg-lightcolor: #EC407A;
+
+$secondary-bg-color: #0f808c;
+$secondary-bg-lightcolor: #129ba9;
+
+$tertiary-bg-color: #00BCD4;
+$tertiary-bg-lightcolor: #26C6DA;
+
+$quaternary-bg-color: #607D8B;
+$quaternary-bg-lightcolor: #78909C;
+
+$primary-color: white;
+$success-color: #43A047;
+$error-color: #D50000;
+$processing-color: #FDD835;
+$demage-color: #E53935;
+$fault-color: #D81B60;
+$info-color: #1E88E5;
+$warning-color: #00ACC1;
+
+$btn-drak-color: #333;
+
+@font-face {
+    font-family: Mukta;
+    src: url(assets/fonts/ggl/mukta/Mukta-Regular.ttf);
+}
+
+@font-face {
+    font-family: Roboto;
+    src: url(assets/fonts/ggl/Roboto/Roboto-Regular.ttf);
+}
+
+$primary-font-family: Mukta;
+$secondary-font-family: Roboto;

@@ -1,0 +1,42 @@
+@import "./variables/variable";
+@import "./mixins/girds-maker";
+@import "./mixins/display";
+@import "./vendors/font-awesome/font-awesome";
+@import "./vendors/ionic/ionicons";
+
+.e-top-wrapper {
+    &.e-menu-fixed {
+
+        &.e-menu-closed {
+
+        }
+    }
+
+    &.e-menu-fixed-left {
+
+    }
+
+    .e-top-header {
+        background-color: $primary-bg-color;
+        min-height: 4em;
+        padding: .5em .5em;
+        &.e-fixed-header {
+
+        }
+    }
+
+    &.e-top-menubar {
+
+    }
+}
+
+.e-msg-box {
+    position: fixed;
+    z-index: 999;
+    width: auto;
+    min-width: 180px;
+    height: auto;
+    min-height: 20px;
+    background-color: $error-color;
+    color: inherit;
+}

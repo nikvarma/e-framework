@@ -1,0 +1,9 @@
+@media screen and (min-width: 1024px) and (max-width: 1365px) {
+    $size: 'lg';
+    @include col-maker($size);
+    @include show($size);
+    @include hide($size);
+    .e-#{$size}-show {
+        display: initial;
+    } 
+}

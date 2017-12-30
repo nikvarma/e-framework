@@ -1,0 +1,13 @@
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    $size: 'md';
+    @include col-maker($size);
+    @include show($size);
+    @include hide($size);
+    .e-small-breadcrumb {
+        display: none;
+    }
+
+    .e-#{$size}-show {
+        display: initial;
+    }
+}

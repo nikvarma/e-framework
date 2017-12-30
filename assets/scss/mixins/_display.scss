@@ -1,0 +1,50 @@
+@mixin show($size: "lg") {
+    .e-#{$size}-show {
+        display: block;
+    }
+}
+
+@mixin hide($size: "lg") {
+    .e-#{$size}-hide {
+        display: none;
+    }
+}
+
+@mixin visible($size: "lg") {
+    .e-#{$size}-show-exist {
+        visibility: visible;
+    }
+}
+
+@mixin hidden($size: "lg") {
+    .e-#{$size}-hide-exist {
+        visibility: hidden;
+    }
+}
+
+@mixin margin-maker() {
+    @for $i from 1 through ceil(100/5) {
+        $stepvalue: ($i - 1)*5;
+        .e-mt-#{$stepvalue} {
+            margin-top: percentage($number: $stepvalue)/100;
+        }
+        .e-mr-#{$stepvalue} {
+            margin-right: percentage($number: $stepvalue)/100;
+        }
+        .e-mb-#{$stepvalue} {
+            margin-bottom: percentage($number: $stepvalue)/100;
+        }
+        .e-ml-#{$stepvalue} {
+            margin-left: percentage($number: $stepvalue)/100;
+        }
+    }
+}
+
+@mixin height-maker() {
+    @for $i from 1 through ceil(1000/50) {
+        $steps: ($i - 1)* 50;
+        .e-mh-#{$steps} {
+            min-height: $steps + px;
+        }
+    }
+}

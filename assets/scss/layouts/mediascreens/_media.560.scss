@@ -1,0 +1,22 @@
+@media screen and (min-width: 560px) and (max-width: 767px) {
+    $size: 'sm';
+    @include col-maker($size);
+    @include show($size);
+    @include hide($size);
+    .e-small-breadcrumb {
+        display: none;
+    }
+
+    .e-#{$size}-show {
+        display: initial;
+    }
+
+    body {
+        &.e-top-header-fixed {
+            padding-top: 7em;
+            // .e-top-header {
+                
+            // }
+        }
+    }
+}

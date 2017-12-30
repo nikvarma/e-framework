@@ -1,0 +1,15 @@
+@mixin col-maker($stype: "", $numbers: 12, $size: 100) {
+    $num: $size/$numbers;
+    @if $stype != "" {
+        $stype: "#{$stype}-";
+    }
+    
+    @if $num > 0 {
+        @for $i from 1 through $numbers {
+            .e-col-#{$stype}#{$i} {
+                width: percentage($number: $num * $i) / 100;
+                padding: .5em;
+            }
+        }
+    }
+}
