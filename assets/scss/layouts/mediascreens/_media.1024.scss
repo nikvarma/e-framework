@@ -3,6 +3,7 @@
     @include col-maker($size);
     @include show($size);
     @include hide($size);
+    @include margin-maker($size);
     .e-#{$size}-show {
         display: initial;
     } 

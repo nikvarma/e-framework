@@ -189,4 +189,5 @@ var actions = {
 
 // var bol = ef.selectID("e-small-breadcrumb").classes('e-menu-e', 'toggle');
 
+var ef = new eFrame();
 exports = eFrame;

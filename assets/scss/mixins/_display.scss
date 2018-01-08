@@ -22,7 +22,43 @@
     }
 }
 
-@mixin margin-maker() {
+@mixin margin-maker($size: '') {
+    @for $i from 1 through ceil(100/5) {
+        $stepvalue: ($i - 1)*5;
+        .e-mt-#{$size}-#{$stepvalue} {
+            margin-top: $stepvalue/10 em;
+        }        
+        .e-mr-#{$size}-#{$stepvalue} {
+            margin-right: $stepvalue/10 em;
+        }
+        .e-mb-#{$size}-#{$stepvalue} {
+            margin-bottom: $stepvalue/10 em;
+        }
+        .e-ml-#{$size}-#{$stepvalue} {
+            margin-left: $stepvalue/10 em;
+        }
+    }
+}
+
+@mixin padding-maker($size: '') {
+    @for $i from 1 through ceil(100/5) {
+        $stepvalue: ($i - 1)*5;
+        .e-pt-#{$size}-#{$stepvalue} {
+            margin-top: $stepvalue/10 em;
+        }        
+        .e-pr-#{$size}-#{$stepvalue} {
+            margin-right: $stepvalue/10 em;
+        }
+        .e-pb-#{$size}-#{$stepvalue} {
+            margin-bottom: $stepvalue/10 em;
+        }
+        .e-pl-#{$size}-#{$stepvalue} {
+            margin-left: $stepvalue/10 em;
+        }
+    }
+}
+
+@mixin margin-pre-maker() {
     @for $i from 1 through ceil(100/5) {
         $stepvalue: ($i - 1)*5;
         .e-mt-#{$stepvalue} {
