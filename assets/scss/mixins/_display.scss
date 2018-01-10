@@ -26,16 +26,20 @@
     @for $i from 1 through ceil(100/5) {
         $stepvalue: ($i - 1)*5;
         .e-mt-#{$size}-#{$stepvalue} {
-            margin-top: $stepvalue/10 em;
+            margin-top: $stepvalue/10*1em;
         }        
         .e-mr-#{$size}-#{$stepvalue} {
-            margin-right: $stepvalue/10 em;
+            margin-right: $stepvalue/10*1em;
         }
         .e-mb-#{$size}-#{$stepvalue} {
-            margin-bottom: $stepvalue/10 em;
+            margin-bottom: $stepvalue/10*1em;
         }
         .e-ml-#{$size}-#{$stepvalue} {
-            margin-left: $stepvalue/10 em;
+            margin-left: $stepvalue/10*1em;
+        }
+
+        .e-margin-#{$stepvalue} {
+            margin: $stepvalue/10*1em;
         }
     }
 }
@@ -55,6 +59,24 @@
         .e-pl-#{$size}-#{$stepvalue} {
             margin-left: $stepvalue/10 em;
         }
+    }
+}
+
+@mixin font-size() {
+    .e-font-xs {
+        font-size: .6em;
+    }
+    .e-font-sm {
+        font-size: .8em;
+    }
+    .e-font-md {
+        font-size: 1em;
+    }
+    .e-font-lg {
+        font-size: 1.2em;
+    }
+    .e-font-xlg {
+        font-size: 1.4em;
     }
 }
 

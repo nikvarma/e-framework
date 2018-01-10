@@ -4,6 +4,7 @@
     @include show($size);
     @include hide($size);
     @include margin-maker($size);
+    @include padding-maker($size);
     .e-#{$size}-show {
         display: initial;
     } 

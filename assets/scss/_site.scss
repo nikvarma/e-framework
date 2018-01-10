@@ -8,8 +8,17 @@
 .e-bg-fff {
     background-color: #fff;
     color: #333;
+    span, a {
+        color: #333;
+    } 
 }
-.e-site-home-h1 {
+.e-site-home-h1, .e-site-h1 {
     font-size: initial;
     font-weight: lighter;
+}
+.e-mh-40 {
+    min-height: 40px;
+}
+.e-mh-35 {
+    min-height: 35px;
 }
