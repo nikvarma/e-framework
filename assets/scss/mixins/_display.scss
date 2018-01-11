@@ -26,20 +26,20 @@
     @for $i from 1 through ceil(100/5) {
         $stepvalue: ($i - 1)*5;
         .e-mt-#{$size}-#{$stepvalue} {
-            margin-top: $stepvalue/10*1em;
+            margin-top: ($stepvalue/10)*1em;
         }        
         .e-mr-#{$size}-#{$stepvalue} {
-            margin-right: $stepvalue/10*1em;
+            margin-right: ($stepvalue/10)*1em;
         }
         .e-mb-#{$size}-#{$stepvalue} {
-            margin-bottom: $stepvalue/10*1em;
+            margin-bottom: ($stepvalue/10)*1em;
         }
         .e-ml-#{$size}-#{$stepvalue} {
-            margin-left: $stepvalue/10*1em;
+            margin-left: ($stepvalue/10)*1em;
         }
 
         .e-margin-#{$stepvalue} {
-            margin: $stepvalue/10*1em;
+            margin: ($stepvalue/10)*1em;
         }
     }
 }
@@ -48,16 +48,16 @@
     @for $i from 1 through ceil(100/5) {
         $stepvalue: ($i - 1)*5;
         .e-pt-#{$size}-#{$stepvalue} {
-            margin-top: $stepvalue/10 em;
+            margin-top: ($stepvalue/10)*1em;
         }        
         .e-pr-#{$size}-#{$stepvalue} {
-            margin-right: $stepvalue/10 em;
+            margin-right: ($stepvalue/10)*1em;
         }
         .e-pb-#{$size}-#{$stepvalue} {
-            margin-bottom: $stepvalue/10 em;
+            margin-bottom: ($stepvalue/10)*1em;
         }
         .e-pl-#{$size}-#{$stepvalue} {
-            margin-left: $stepvalue/10 em;
+            margin-left: ($stepvalue/10)*1em;
         }
     }
 }
