@@ -104,5 +104,8 @@
         .e-mh-#{$steps} {
             min-height: $steps + px;
         }
+        .e-mxh-#{$steps} {
+            min-height: $steps + px;
+        }
     }
 }
