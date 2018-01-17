@@ -109,3 +109,8 @@
         }
     }
 }
+
+@mixin border-light {
+    border: 1px solid #cac6c6;
+    border-radius: 2px;
+}
